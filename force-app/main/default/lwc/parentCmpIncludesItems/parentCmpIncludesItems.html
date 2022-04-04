@@ -1,0 +1,23 @@
+<template>
+    <lightning-card style="background-color: aquamarine; height :auto; width :auto">
+        <div class="demo-only demo-only--sizing slds-grid slds-wrap">
+            <div class="slds-size_1-of-3">
+                <div class="slds-box slds-box_x-small slds-m-around_x-small">
+                    <c-show-recent-items title="Recent Accounts" records={reviewData} columns={reviewColumns}>
+                    </c-show-recent-items>
+                </div>
+            </div>
+            <div class="slds-size_1-of-3">
+                <div class="slds-box slds-box_x-small slds-m-around_x-small">
+                    <c-show-recent-items title="Recent Reviews" records={reviewData} columns={reviewColumns}>
+                    </c-show-recent-items>
+                </div>
+            </div>
+            <div class="slds-size_1-of-3">
+                <div class="slds-box slds-box_x-small slds-m-around_x-small">
+                    <c-show-training-items></c-show-training-items>
+                </div>
+            </div>
+        </div>
+    </lightning-card>
+</template>

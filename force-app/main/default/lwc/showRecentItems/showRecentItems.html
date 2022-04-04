@@ -1,0 +1,14 @@
+<template>
+    <lightning-card icon-name="standard:opportunity" title={title}>
+       
+        <div style="height: 300px;" class="myTable">
+            <lightning-datatable
+                    key-field="id"
+                    hide-checkbox-column="true"
+                    enable-infinite-loading="true"
+                    data={records}
+                    columns={columns}>
+            </lightning-datatable>
+        </div> 
+    </lightning-card>
+</template>

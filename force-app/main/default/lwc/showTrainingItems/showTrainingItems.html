@@ -1,0 +1,13 @@
+<template>
+    <lightning-card  title="Recent Trainings" variant="brand">
+        <div style="height: 300px;">
+            <lightning-datatable
+                    key-field="id"
+                    hide-checkbox-column="true"
+                    enable-infinite-loading="true"
+                    data={data}
+                    columns={columns}>
+            </lightning-datatable>
+        </div> 
+    </lightning-card>
+</template>
